@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="354px" height="92px" viewBox="0 0 354 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="Krungthep" font-size="36" font-weight="bold" fill="#595959">
+            <tspan x="87.1195312" y="79">Fitness Buddy</tspan>
+        </text>
+        <filter x="-1.1%" y="-4.4%" width="103.0%" height="117.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-3" font-family="Krungthep" font-size="36" font-weight="bold" fill="#595959">
+            <tspan x="137.014062" y="39">Personal</tspan>
+        </text>
+        <filter x="-1.8%" y="-4.4%" width="104.7%" height="117.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-5">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#613ABB" offset="27.4638453%"></stop>
+            <stop stop-color="#613ABB" offset="31.8372792%"></stop>
+            <stop stop-color="#C96DD8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-2.000000, 0.000000)">
+            <text id="PRO" font-family="Krungthep" font-size="24" font-weight="bold" fill="#FFFFFF">
+                <tspan x="6.009375" y="37">PRO</tspan>
+            </text>
+            <g id="Fitness-Buddy" fill-opacity="1" fill="#595959">
+                <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                <use xlink:href="#text-1"></use>
+            </g>
+            <g id="Personal" fill-opacity="1" fill="#595959">
+                <use filter="url(#filter-4)" xlink:href="#text-3"></use>
+                <use xlink:href="#text-3"></use>
+            </g>
+            <g>
+                <circle id="Oval" fill="url(#linearGradient-5)" cx="44.5" cy="42.5" r="42.5"></circle>
+                <text id="PRO" font-family="Krungthep" font-size="28" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="7.30505515" y="36">PRO</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

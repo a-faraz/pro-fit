@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { Store } from 'store';
 
 // feature modules
+import { AuthModule } from '../auth/auth.module';
 
 // Firebase
 // var config = {
@@ -26,6 +27,7 @@ export const ROUTES: Routes = [];
 
 @NgModule({
   imports: [
+    AuthModule,
     BrowserModule,
     RouterModule.forRoot(ROUTES)
   ],

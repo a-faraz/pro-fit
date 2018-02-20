@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   template: `
     <div>
       Pro Fitness App!
+      <div class="wrapper">
+      <router-outlet></router-outlet>
+      </div>
     </div>
   `
 })

@@ -17,8 +17,6 @@ export const ROUTES: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES)
-  ],
-  declarations: [],
-  providers: []
+  ]
 })
 export class AuthModule {}

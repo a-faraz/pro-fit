@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AngularFireModule, FirebaseAppConfig } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { SharedModule } from './shared/shared.module';
 
@@ -33,8 +34,9 @@ export const firebaseConfig: FirebaseAppConfig = {
     CommonModule,
     RouterModule.forChild(ROUTES),
     AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
     AngularFireDatabaseModule,
-    SharedModule
+    SharedModule.forRoot()
   ]
 })
 export class AuthModule {}

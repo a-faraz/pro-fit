@@ -24,7 +24,6 @@ import { Subscription } from 'rxjs/Subscription';
       <app-nav
         *ngIf="(user$ | async)?.authenticated">
       </app-nav>
-      <h1>{{ user$ | async | json }}</h1>
       <div class="wrapper">
       <router-outlet></router-outlet>
       </div>

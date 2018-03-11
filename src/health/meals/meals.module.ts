@@ -9,11 +9,13 @@ import { SharedModule } from '../shared/shared.module';
 // CONTAINERS
 import { MealsComponent } from './containers/meals/meals.component';
 import { MealComponent } from './containers/meal/meal.component';
-
+// COMPONENTS
+import { MealFormComponent } from './components/meal-form.component';
 
 export const ROUTES: Routes = [
   { path: '', component: MealsComponent },
-  { path: 'new', component: MealComponent }
+  { path: 'new', component: MealComponent },
+  { path: ':id', component: MealComponent },
 ];
 
 
@@ -26,7 +28,8 @@ export const ROUTES: Routes = [
   ],
   declarations: [
     MealComponent,
-    MealsComponent
+    MealsComponent,
+    MealFormComponent,
   ],
   providers: []
 })

@@ -21,7 +21,9 @@ export class MealsComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
+    console.log('meals before: ', this.meals$);
     this.meals$ = this._store$.select<Meal[]>('meals');
+    console.log('meals after: ', this.meals$);
     this.subscription = this._mealsService.meals$.subscribe()
   }
 

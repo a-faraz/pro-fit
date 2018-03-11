@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 // CONTAINERS
-import { ScheduleComponent } from './containers/Schedule.component';
+import { ScheduleComponent } from './containers/schedule/schedule.component';
 
 
 export const ROUTES: Routes = [

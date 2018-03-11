@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 // CONTAINERS
-import { WorkoutsComponent } from './containers/workouts.component';
+import { WorkoutsComponent } from './containers/workouts/workouts.component';
 
 
 export const ROUTES: Routes = [

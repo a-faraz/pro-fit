@@ -14,7 +14,7 @@ export interface User {
 export class AuthService {
 
   // Observable to create new stream
-  auth$ = this.af.authState
+  auth$ = this._af.authState
     // Do Operator as a side effect to create user object
     .do(next => {
       if (!next) {
@@ -31,24 +31,28 @@ export class AuthService {
 
   constructor(
     private _store$: Store,
-    private af: AngularFireAuth
+    private _af: AngularFireAuth
   ) {}
 
   get authState() {
-    return this.af.authState;
+    return this._af.authState;
+  }
+
+  get user() {
+    return this._af.auth.currentUser;
   }
 
   createUser (email: string, password: string)  {
-    return this.af.auth
+    return this._af.auth
       .createUserWithEmailAndPassword(email, password)
   }
 
   loginUser (email: string, password: string)  {
-    return this.af.auth
+    return this._af.auth
       .signInWithEmailAndPassword(email, password)
   }
 
   logoutUser () {
-    return this.af.auth.signOut();
+    return this._af.auth.signOut();
   }
 }

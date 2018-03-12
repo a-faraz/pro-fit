@@ -2,12 +2,28 @@
   <div class="meal__title">
     <h1>
       <img src="/img/food.svg">
-      <span>Create meal</span>
+      <span *ngIf="meal$ | async as meal; else title;">
+        {{ meal.name ? 'Edit' : 'Create' }} meal
+      </span>
+      <ng-template #title>
+        Loading...
+      </ng-template>
     </h1>
   </div>
   <div>
     <app-meal-form
-      (create)="addMeal($event)">
+    *ngIf="meal$ | async as meal; else loading;"
+    [meal]="meal"
+    (create)="addMeal($event)"
+    (update)="updateMeal($event)"
+    (remove)="removeMeal($event)">
     </app-meal-form>
   </div>
+  <ng-template #loading>
+    <div class="message">
+      <img src="/img/loading.svg">
+      Fetching meal...
+    </div>
+    Loading...
+  </ng-template>
 </div>
